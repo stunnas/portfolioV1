@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NavigationAside from "@/components/sections/navigationAside";
@@ -79,7 +80,7 @@ export default function Projects() {
                                         {project.title}
                                     </CardItem>
                                     <CardItem translateZ="125" className="w-full flex justify-center my-4">
-                                        <img src={project.image} className="rounded-xl border-2 border-black object-cover size-48"/>
+                                        <Image src={project.image} alt={project.title} width={500} height={300} className="rounded-xl size-48"/>
                                     </CardItem>
                                     <div className="relative inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                                         <span className="text-lg font-bold text-gray-700">Go to website</span>
