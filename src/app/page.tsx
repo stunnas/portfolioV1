@@ -63,7 +63,7 @@ export default function Home() {
                 </div>
                 <div>
                     <p className="mt-4 text-gray-600">
-                        I'm a web / game devleoper based in Raleigh, NC, working in consulting. I
+                        I&apos;m a web / game devleoper based in Raleigh, NC, working in consulting. I
                         enjoy turning complex problems into simple, beautiful and intuitive designs.
                     </p>
                     <p className="mt-2 text-gray-600">
