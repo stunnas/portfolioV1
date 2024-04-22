@@ -1,4 +1,5 @@
 import { JSX, SVGProps } from "react";
+
 export function CalendarIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
     return (
         <svg
@@ -59,6 +60,28 @@ export function CodeIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement
             <polyline points="8 6 2 12 8 18" />
         </svg>
     )
+}
+
+export function ControllerIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+    return (
+        <svg
+            {...props}
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            <rect x="2" y="6" width="20" height="12" rx="4" ry="4" />
+            <circle cx="6" cy="12" r="1.5" />
+            <circle cx="10" cy="12" r="1.5" />
+            <path d="M15 11h2m-1-1v2" />
+        </svg>
+    );
 }
 
 export function GithubIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
@@ -201,6 +224,27 @@ export function SmartphoneIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGE
         >
             <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
             <path d="M12 18h.01" />
+        </svg>
+    )
+}
+
+export function MenuIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+    return (
+        <svg
+            {...props}
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
         </svg>
     )
 }

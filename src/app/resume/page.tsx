@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import MobileDropdown from '@/components/sections/mobileDropdown';
 
 export default function Resume() {
     useEffect(() => {
@@ -69,18 +70,17 @@ export default function Resume() {
     ];
 
     const knowledge = [
-        'Digital Design',
-        'Marketing',
-        'Communication',
-        'Social Media',
-        'Time Management',
-        'Flexibility',
-        'Print',
+        'Software Development (Agile, Scrum)',
+        'Frameworks and Libraries',
+        'Version Control (Git)',
+        'Database Management (SQL, MongoDB)',
+        'Problem-Solving and Optimization'
     ];
 
     return (
         <>
             <div className="flex items-center justify-center relative h-screen bg-swirl">
+                <MobileDropdown/>
                 <ProfileAside/>
                 <main data-aos="flip-up" className="w-[90%] lg:w-[60%] h-[90%] flex flex-col items-center justify-start p-8 bg-white border-2 border-black rounded-xl overflow-y-auto">
                     <div className="w-full flex flex-row justify-start items-center space-x-4">
@@ -94,7 +94,7 @@ export default function Resume() {
                             <ul className="space-y-3">
                                 {educations.map((education, index) => (
                                     <li key={index}>
-                                        <Card className="min-h-max bg-white p-4">
+                                        <Card className="min-h-max bg-white p-4 border-black">
                                             <CardHeader className="w-full p-0">
                                                 <CardTitle className="text-sm md:text-md">{education.type}</CardTitle>
                                                 <CardDescription className="text-sm md:text-md">Major: {education.major}</CardDescription>
@@ -112,7 +112,7 @@ export default function Resume() {
                             <ul className="space-y-3">
                                 {experiences.map((experience, index) => (
                                     <li key={index}>
-                                        <Card className="min-h-max bg-white p-4">
+                                        <Card className="min-h-max bg-white p-4 border-black">
                                             <CardHeader className="w-full p-0">
                                                 <CardTitle className="text-sm md:text-md">{experience.title}</CardTitle>
                                                 <CardDescription className="text-sm md:text-md">{experience.date}</CardDescription>
@@ -146,17 +146,15 @@ export default function Resume() {
                                 <h3 className="text-lg font-semibold text-gray-800 mb-4">Knowledge</h3>
                                 <div className="grid md:grid-cols-2 gap-4">
                                 {knowledge.map((item, index) => (
-                                    <Badge key={index} variant="secondary">{item}</Badge>
+                                    <Badge key={index} variant="secondary" className="text-center flex justify-center items-center border-black">{item}</Badge>
                                 ))}
                                 </div>
                             </div>
                     </div>
-                    <div className="absolute bottom-0 p-4 text-white text-center">
-                        <div className="flex flex-row justify-center space-x-2">
-                            <h2 className="text-xs md:text-sm animate-spin ">*</h2>
-                            <h3 className="text-xs md:text-sm">Made with React, Typescript, Tailwind CSS, Next JS</h3>
-                            <h2 className="text-xs md:text-sm animate-spin">*</h2>
-                        </div>
+                    <div className="flex flex-row justify-center space-x-2 mt-4 font-bold">
+                        <h2 className="text-xs md:text-sm animate-spin ">*</h2>
+                        <h3 className="text-black text-center text-xs md:text-sm">Made with React, Typescript, Tailwind CSS, Next JS</h3>
+                        <h2 className="text-xs md:text-sm animate-spin">*</h2>
                     </div>
                 </main>
                 <NavigationAside/>
