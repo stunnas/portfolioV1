@@ -2,13 +2,14 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import MobileDropdown from '@/components/sections/mobileDropdown';
 import NavigationAside from "@/components/sections/navigationAside";
 import ProfileAside from "@/components/sections/profileAside";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import MobileDropdown from '@/components/sections/mobileDropdown';
+
 
 export default function Resume() {
     useEffect(() => {
