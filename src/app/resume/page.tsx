@@ -145,9 +145,9 @@ export default function Resume() {
                             <div>
                                 <h3 className="text-lg font-semibold text-gray-800 mb-4">Knowledge</h3>
                                 <div className="grid md:grid-cols-2 gap-4">
-                                {knowledge.map((item, index) => (
-                                    <Badge key={index} variant="secondary" className="text-center flex justify-center items-center border-black">{item}</Badge>
-                                ))}
+                                    {knowledge.map((item, index) => (
+                                        <Badge key={index} variant="secondary" className="text-center flex justify-center items-center border-black">{item}</Badge>
+                                    ))}
                                 </div>
                             </div>
                     </div>

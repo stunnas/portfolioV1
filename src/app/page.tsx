@@ -19,10 +19,6 @@ export default function Home() {
     }, []);
 
     const [autoplay, setAutoplay] = useState(true);
-    
-    const handleAutoplayChange = (event: { target: { checked: boolean | ((prevState: boolean) => boolean); }; }) => {
-        setAutoplay(event.target.checked);
-    };
 
     const services = [
         {
