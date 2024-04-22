@@ -56,6 +56,7 @@ export default function Projects() {
             title: 'Audio Glow',
             image: '/musicvisualizer.png',
             category: 'tools',
+            website: 'https://audioglow.vercel.app/',
         },
         {
             title: 'Word Assistant',
