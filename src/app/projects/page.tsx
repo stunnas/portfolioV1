@@ -62,6 +62,7 @@ export default function Projects() {
             title: 'Word Assistant',
             image: '/wordassistant.png',
             category: 'tools',
+            website: 'https://wordassistant.vercel.app/',
         },
         {
             title: 'Typing Speed Test',
